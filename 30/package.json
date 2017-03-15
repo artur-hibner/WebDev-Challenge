@@ -1,0 +1,28 @@
+{
+  "name": "Gulp-configuration",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-color": "0.0.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-htmlclean": "^2.2.3",
+    "gulp-imagemin": "^2.0.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.10",
+    "jshint": "^2.9.4"
+  },
+  "author": "Artur Hibner"
+}
