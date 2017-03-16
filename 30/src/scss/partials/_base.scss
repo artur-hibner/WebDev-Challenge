@@ -108,8 +108,6 @@
 	&__info, &__map{
 		width: 50%;
 		float: left;
-		height: 100%;
-
 	}
 	&__info{
 		padding: 90px 210px 90px 0;
@@ -125,10 +123,6 @@
 		}
 	}
 	&__map{
-		img{
-			width: 100%;
-			display: block;
-    		height: auto; 
-		}
+		min-height: 464px;
 	}
 }

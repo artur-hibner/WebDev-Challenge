@@ -100,9 +100,9 @@
 						<h3>Email</h3>
 						<p>almaz@bisenbeav.com</p>
 					</div>
-					<div class="contact__map">
+					<div id="map" class="contact__map">
 						<!-- temporary map image -->
-						<img src="images/map.png" alt="google map">
+						<!-- <img src="images/map.png" alt="google map"> -->
 					</div>
 				</div>
 			</section>
@@ -122,5 +122,21 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+	      function initMap() {
+	        var uluru = {lat: 52.231512, lng: 21.006007};
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	          zoom: 14,
+	          center: uluru
+	        });
+	        var marker = new google.maps.Marker({
+	          position: uluru,
+	          map: map
+	        });
+	      }
+	    </script>
+	    <script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD1rbhkpsNJtjmCJbk284rs_511grgx3Q&callback=initMap">
+	    </script>
 	</body>
 </html>

@@ -281,7 +281,6 @@ header nav ul li a {
 .contact__info, .contact__map {
   width: 50%;
   float: left;
-  height: 100%;
 }
 
 .contact__info {
@@ -302,10 +301,8 @@ header nav ul li a {
   font-weight: 300;
 }
 
-.contact__map img {
-  width: 100%;
-  display: block;
-  height: auto;
+.contact__map {
+  min-height: 464px;
 }
 
 /* ========== FOOTER SECTION ========== */
