@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100|Roboto:300,400,700,900");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -65,7 +66,168 @@ html {
   height: 100%;
 }
 
+body {
+  background-color: #efeee9;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 /* ========== MAIN SECTION ========== */
+.project {
+  margin-bottom: 192px;
+}
+
+.project__description {
+  background-color: #FFFFFF;
+  padding: 100px 190px;
+  font-family: "Roboto Slab", serif;
+  font-size: 4rem;
+  color: #444444;
+  line-height: auto;
+  font-weight: 100;
+}
+
+.project__description h2 {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.project__description p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #222222;
+  line-height: 2.8rem;
+  font-weight: 300;
+}
+
+.project__description button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  color: #222222;
+  line-height: 2.4rem;
+  font-weight: 900;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 35px;
+  background-color: inherit;
+  border: 2px solid #222222;
+  margin-top: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio {
+  overflow: hidden;
+}
+
+.portfolio:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.portfolio__item {
+  width: 33.33%;
+  max-height: 420px;
+  float: left;
+}
+
+.quote {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.6rem;
+  color: #222222;
+  line-height: 3.6rem;
+  font-weight: 100;
+  margin: 220px auto 210px auto;
+  text-align: center;
+}
+
+.about {
+  background-color: #fff;
+}
+
+.about:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about__image, .about__info {
+  width: 50%;
+  float: left;
+}
+
+.about__image img {
+  width: 100%;
+}
+
+.about__info {
+  padding-left: 120px;
+  padding-top: 110px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  color: #290a59;
+  line-height: 2.2rem;
+  font-weight: 300;
+}
+
+.about__info--description {
+  margin-top: 50px;
+  width: 50%;
+}
+
+.about__info--description h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about__info--description p {
+  color: #6d6081;
+}
+
+.articles {
+  padding: 100px 0;
+}
+
+.articles__item {
+  width: 31%;
+  display: inline-block;
+  margin-right: 2.7%;
+  padding: 30px 50px;
+  background-color: #FFF;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #222222;
+  line-height: 1.6rem;
+  font-weight: 300;
+}
+
+.articles__item:last-child {
+  margin-right: 0;
+}
+
+.articles__item h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  color: #222222;
+  line-height: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.articles__item p {
+  padding-bottom: 45px;
+}
+
+.articles__item a {
+  color: #4eaeff;
+  font-weight: 400;
+}
+
 /* ========== FOOTER SECTION ========== */
 /* ========== MEDIA QUERIES ========== */
 

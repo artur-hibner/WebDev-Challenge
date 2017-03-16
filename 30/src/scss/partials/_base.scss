@@ -1,1 +1,103 @@
 /* ========== MAIN SECTION ========== */
+
+
+.project{
+	&__description{
+		background-color: #FFFFFF;
+		padding: 100px 190px;
+		@include font-family($robotoSlab, 4rem, #444444, auto, 100);
+		h2{
+			text-align: center;
+			padding-bottom: 80px;
+		}
+		p{
+		@include font-family($roboto, 2rem, #222222, 2.8rem, 300);
+		}
+		button{
+			@include font-family($roboto, 1.8rem, #222222, 2.4rem, 900);
+			display: block;
+			margin: 0 auto;
+			padding: 15px 35px;
+			background-color: inherit;
+			border: 2px solid #222222;
+			margin-top: 60px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+	margin-bottom: 192px;
+}
+
+.portfolio{
+	@include clearfix;
+	overflow: hidden;
+	&__item{
+		width: 33.33%;
+		max-height: 420px;
+		float: left;
+	}
+}
+
+.quote{
+	@include font-family($roboto, 3.6rem, #222222, 3.6rem, 100);
+	margin: 220px auto 210px auto;
+	text-align: center;
+}
+
+.about{
+	@include clearfix;
+	background-color: #fff;
+	&__image, &__info{
+		width: 50%;
+		float: left;
+	}
+	&__image{
+		img{
+			width: 100%;
+		}
+	}
+	&__info{
+		padding-left: 120px;
+		padding-top: 110px;
+		@include font-family($roboto, 1.4rem, #290a59, 2.2rem, 300);
+		&--description{
+			margin-top: 50px;
+			width: 50%;
+			h3{
+				text-transform: uppercase;
+				margin-bottom: 10px;
+			}
+			p{
+				color: #6d6081;
+			}
+		}
+	}
+}
+
+.articles{
+	padding: 100px 0;
+	&__item{
+		width: 31%;
+		display: inline-block;
+		margin-right: 2.7%;
+		padding: 30px 50px;
+		background-color: #FFF;
+		text-align: center;
+		@include font-family($roboto, 1.6rem, #222222, 1.6rem, 300);
+		
+		&:last-child{
+			margin-right: 0;
+		}
+		h3{
+			@include font-family($roboto, 1.8rem, #222222, 1.8rem, 700);
+			padding-bottom: 40px;
+		}
+		p{
+			padding-bottom: 45px;
+		}
+		a{
+			color: #4eaeff;
+			font-weight: 400;
+		}
+	}
+}

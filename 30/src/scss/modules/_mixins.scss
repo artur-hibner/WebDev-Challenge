@@ -5,3 +5,12 @@
     clear: both;
   }
 }
+
+@mixin font-family ($family, $size, $color, $lh, $weight) {
+	font-family: $family;
+	font-size: $size;
+	color: $color;
+	line-height: $lh;
+	font-weight: $weight;
+}
+
