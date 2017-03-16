@@ -1,2 +1,24 @@
 /* ========== FOOTER SECTION ========== */
 
+.footer{
+	padding: 50px 0;
+	&__icons, &__copy{
+		display: inline-block;
+	}
+	&__icons{
+		font-size: 24px;
+		ul{
+			li{
+				display: inline-block;
+				margin-right: 20px;
+				a{
+					color: #353535;
+				}
+			}
+		}
+	}
+	&__copy{
+		float: right;
+		@include font-family($roboto, 2rem, #353535, 2.8rem, 300);
+	}
+}

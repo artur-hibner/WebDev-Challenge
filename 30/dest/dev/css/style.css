@@ -228,7 +228,77 @@ body {
   font-weight: 400;
 }
 
+.contact {
+  background-color: #353535;
+}
+
+.contact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact__info, .contact__map {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+
+.contact__info {
+  padding: 90px 210px 90px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #FFF;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+
+.contact__info h3 {
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.contact__info p:first-child {
+  font-weight: 300;
+}
+
+.contact__map img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
 /* ========== FOOTER SECTION ========== */
+.footer {
+  padding: 50px 0;
+}
+
+.footer__icons, .footer__copy {
+  display: inline-block;
+}
+
+.footer__icons {
+  font-size: 24px;
+}
+
+.footer__icons ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer__icons ul li a {
+  color: #353535;
+}
+
+.footer__copy {
+  float: right;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #353535;
+  line-height: 2.8rem;
+  font-weight: 300;
+}
+
 /* ========== MEDIA QUERIES ========== */
 
 /*# sourceMappingURL=style.css.map */
