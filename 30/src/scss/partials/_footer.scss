@@ -11,8 +11,13 @@
 			li{
 				display: inline-block;
 				margin-right: 20px;
+					transition: all .2s ease-in-out; 
+					&:hover{
+						transform: scale(1.5);
+					}
 				a{
 					color: #353535;
+
 				}
 			}
 		}
