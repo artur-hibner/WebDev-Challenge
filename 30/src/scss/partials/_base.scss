@@ -80,10 +80,10 @@
 		width: 31%;
 		display: inline-block;
 		margin-right: 2.7%;
-		padding: 30px 50px;
+		padding: 40px 50px;
 		background-color: #FFF;
 		text-align: center;
-		@include font-family($roboto, 1.6rem, #222222, 1.6rem, 300);
+		@include font-family($roboto, 1.6rem, #222222, 2.4rem, 300);
 		
 		&:last-child{
 			margin-right: 0;

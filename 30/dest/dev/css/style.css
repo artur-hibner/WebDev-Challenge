@@ -236,13 +236,13 @@ header nav ul li a {
   width: 31%;
   display: inline-block;
   margin-right: 2.7%;
-  padding: 30px 50px;
+  padding: 40px 50px;
   background-color: #FFF;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   color: #222222;
-  line-height: 1.6rem;
+  line-height: 2.4rem;
   font-weight: 300;
 }
 
