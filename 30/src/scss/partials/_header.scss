@@ -17,6 +17,7 @@ body{
 
 header{
 	height: 100vh;
+	position: relative;
 	background-image: url("../images/header.png");
 	background-size: cover;
     background-repeat: no-repeat;
@@ -25,6 +26,9 @@ header{
 		padding: 70px 0 80px 0;
 		background-color: #f9fbf9;
 		opacity: 0.6;
+		position: fixed;
+		z-index: 1;
+		width: 100%;
 		ul{
 			list-style: none;
 			text-align: center;
@@ -44,5 +48,19 @@ header{
 				}
 			}
 		}
+	}
+	.wrapper{
+		height: 100%;
+		position: relative;
+	}
+	p{
+		@include font-family($roboto, 2.4em, #333333, 2.4rem, 300);
+			display: block;
+			white-space: pre-line;
+			text-align: right;
+			position: absolute;
+			bottom: 50px;
+			right: 0;
+
 	}
 }
