@@ -184,6 +184,11 @@ header p {
 
 .portfolio {
   overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.8rem;
+  color: #222222;
+  line-height: 2.8rem;
+  font-weight: 400;
 }
 
 .portfolio:after {
@@ -196,6 +201,87 @@ header p {
   width: 33.33%;
   max-height: 420px;
   float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.portfolio__item--description {
+  color: #FFF;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+
+.portfolio__item img {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.portfolio__item h3 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 60px 0 60px;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+
+.portfolio__item p {
+  position: relative;
+  font-size: 1.8rem;
+  font-style: italic;
+  padding: 30px 20px 20px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.portfolio__item a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  background-color: #000;
+  box-shadow: 0 0 1px #fff;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.portfolio__item:hover img {
+  -webkit-transform: scale(10);
+          transform: scale(10);
+  opacity: 0;
+}
+
+.portfolio__item:hover .portfolio__item--description {
+  opacity: 1;
+}
+
+.portfolio__item:hover h3, .portfolio__item:hover p, .portfolio__item:hover a {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
 }
 
 .quote {
