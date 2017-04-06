@@ -91,6 +91,8 @@ header nav {
   position: fixed;
   z-index: 1;
   width: 100%;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 header nav ul {
@@ -135,6 +137,10 @@ header p {
   position: absolute;
   bottom: 50px;
   right: 0;
+}
+
+.navScroll {
+  padding: 20px 0 20px 0 !important;
 }
 
 /* ========== MAIN SECTION ========== */
@@ -517,6 +523,46 @@ header p {
   color: #353535;
   line-height: 2.8rem;
   font-weight: 300;
+}
+
+.footer .returnToTop {
+  position: relative;
+}
+
+.footer .returnToTop a {
+  width: 60px;
+  height: 60px;
+  background-color: #4eaeff;
+  opacity: 0.7;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.footer .returnToTop span {
+  margin-top: 10px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #fff;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer .returnToTop:hover span {
+  top: 5%;
+}
+
+.footer .returnToTop:hover a {
+  opacity: 1;
 }
 
 /* ========== MEDIA QUERIES ========== */
