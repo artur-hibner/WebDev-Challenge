@@ -42,7 +42,7 @@ header{
 					}
 				}
 				a{
-					@include font-family($roboto, 1rem, #222, 2.3rem, 400);
+					@include font-family($roboto, 1.6rem, #222, 2.3rem, 400);
 					text-decoration: none;
 					text-transform: uppercase;
 					margin: 0 25px;

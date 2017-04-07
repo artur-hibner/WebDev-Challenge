@@ -111,7 +111,7 @@ header nav ul li:nth-child(3) a {
 
 header nav ul li a {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #222;
   line-height: 2.3rem;
   font-weight: 400;
@@ -566,5 +566,129 @@ header p {
 }
 
 /* ========== MEDIA QUERIES ========== */
+@media screen and (max-width: 960px) {
+  /* ========== HEADER ========== */
+  /* ========== MAIN ========== */
+  .wrapper {
+    width: 95%;
+  }
+  .project__description {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+  }
+  .portfolio__item {
+    width: 50%;
+  }
+  .about__image {
+    float: none;
+    width: 100%;
+  }
+  .about__info {
+    padding: 50px 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .about__info--description {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+  .about__info--description h3 {
+    font-size: 2.4rem;
+  }
+  .about__info--description p {
+    font-size: 1.8rem;
+  }
+  .articles__item {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .contact__info {
+    padding: 50px 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* ========== HEADER ========== */
+  header nav {
+    display: none;
+  }
+  header nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  header nav li {
+    display: inline-block;
+    margin-right: 47px;
+    padding: 10px 0;
+  }
+  header nav li:nth-child(2) {
+    margin-right: 130px;
+  }
+  header nav li:nth-child(3) {
+    margin-left: 130px;
+  }
+  header nav li:last-child {
+    margin: 0;
+  }
+  header nav a {
+    color: #000;
+    height: 100%;
+  }
+  header nav a:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* ========== MAIN ========== */
+  .quote {
+    margin: 100px 0;
+  }
+  .portfolio__item {
+    width: 100%;
+  }
+  .portfolio__item img {
+    width: 100%;
+  }
+  .portfolio__item h3 {
+    padding: 10px;
+  }
+  .contact__info, .contact__map {
+    width: 100%;
+    float: none;
+  }
+  .contact__info {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .contact__map {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* ========== MAIN ========== */
+  .wrapper {
+    width: 95%;
+  }
+  /* ========== FOOTER ========== */
+  .footer__icons, .footer__copy {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* ========== HEADER ========== */
+  header .banner h1 {
+    font-size: 3rem;
+  }
+  header .banner h1:after {
+    height: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,2 +1,154 @@
 /* ========== MEDIA QUERIES ========== */
 
+@media screen  and (max-width:960px){
+/* ========== HEADER ========== */
+
+/* ========== MAIN ========== */
+	.wrapper{
+			width: 95%;
+	}
+	.project{
+		&__description{
+			padding-left: 50px;
+			padding-right: 50px;
+			text-align: justify;
+		}
+	}
+	.portfolio{
+		&__item{
+			width: 50%;
+		}
+	}
+	.about{
+		&__image{
+			float: none;
+			width: 100%;
+		}
+		&__info{
+			padding: 50px 20px;
+			width: 100%;
+			text-align: center;
+			&--description{
+				width: 100%;
+				margin: 0;
+				padding: 20px;
+				h3{
+					font-size: 2.4rem;
+				}
+				p{
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+	.articles{
+		&__item{
+			width: 100%;
+			margin: 20px 0;
+		}
+	}
+	.contact{
+		&__info{
+			padding: 50px 20px;
+		}
+	}
+}
+
+@media screen and (max-width:800px){
+/* ========== HEADER ========== */
+
+	header{
+		nav{
+				display: none;
+			ul{
+				list-style: none;
+				text-align: center;
+			}
+			li{
+	  			display: inline-block;
+	  			margin-right: 47px;
+	  			padding: 10px 0;
+	  			&:nth-child(2){
+	  				margin-right: 130px;
+	  			}
+	  			&:nth-child(3){
+	  				margin-left: 130px;
+	  			}
+	  			&:last-child{
+	  				margin: 0;
+	  			}
+			}
+			a{
+				color: #000;
+				height: 100%;
+
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 640px){
+
+/* ========== MAIN ========== */
+	.quote{
+		margin: 100px 0;
+	}
+	.portfolio{
+		&__item{
+			width: 100%;
+			img{
+				width: 100%;
+			}
+			h3{
+				padding: 10px;
+			}
+		}
+	}
+	.contact{
+		&__info, &__map{
+			width: 100%;
+			float: none;
+		}
+		&__info{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&__map{
+			margin: 20px 0;
+		}
+	}
+}
+
+@media screen and (max-width: 480px){
+
+/* ========== MAIN ========== */
+
+	.wrapper{
+		width: 95%;
+	}
+
+/* ========== FOOTER ========== */
+	.footer__icons, .footer__copy {
+	    width: 100%;
+	    text-align: center;
+	    padding: 5px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+/* ========== HEADER ========== */
+	header{
+		.banner{
+	  		h1{
+	  			font-size: 3rem;
+	  			&:after{
+	  				height: 0;
+	  			}
+	  		}
+		}
+	}
+}
