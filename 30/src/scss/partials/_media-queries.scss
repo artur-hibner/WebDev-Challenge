@@ -56,39 +56,49 @@
 
 @media screen and (max-width:800px){
 /* ========== HEADER ========== */
-
+	.navScroll{
+			padding: 0px 0 00px 0 !important;
+	}
 	header{
-		nav{
-				display: none;
+		.mobile-toggle{
+			display: block;
+		}
+		.nav{
+				padding: 0;
+				height: 66px; 
+				overflow: hidden;
+				z-index: 100;
+				opacity: 0.8;
+				&--open{
+					display: block;
+					padding: 0px 0 80px 0; 
+					height: 300px; 
+					opacity: 1;
+				}
 			ul{
+				padding-top: 60px;
+				padding-bottom: 20px;
 				list-style: none;
 				text-align: center;
+				width: 100%;
 			}
 			li{
-	  			display: inline-block;
-	  			margin-right: 47px;
+				width: 100%;
+	  			display: block;
 	  			padding: 10px 0;
-	  			&:nth-child(2){
-	  				margin-right: 130px;
-	  			}
-	  			&:nth-child(3){
-	  				margin-left: 130px;
-	  			}
-	  			&:last-child{
+	  			&:nth-child(2), &:nth-child(3), &:last-child{
 	  				margin: 0;
 	  			}
 			}
 			a{
 				color: #000;
 				height: 100%;
-
 				&:after {
 					display: none;
 				}
 			}
 		}
 	}
-
 }
 
 @media screen and (max-width: 640px){

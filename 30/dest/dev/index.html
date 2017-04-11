@@ -8,14 +8,19 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header>
-			<nav id="nav">
+		<header id="moonspeak">
+			<div id="mobile-toggle" class="mobile-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav id="nav" class="nav">
 				<ul>
-					<li><a href="#">portfolio</a></li>
-					<li><a href="#">about</a></li>
-					<li><a href="#">moonspeak</a></li>
-					<li><a href="#">articles</a></li>
-					<li><a href="#">contact</a></li>
+					<li><a href="#portfolio">portfolio</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#moonspeak">moonspeak</a></li>
+					<li><a href="#articles">articles</a></li>
+					<li><a href="#contact">contact</a></li>
 				</ul>
 			</nav>
 			<div class="wrapper">
@@ -33,7 +38,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="portfolio">
+			<section id="portfolio" class="portfolio">
 				<div class="portfolio__item">
 					<img src="images/project-1.png" alt="image of project number 1">
 					<div class="portfolio__item--description">
@@ -88,7 +93,7 @@
 					<h3>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.</h3>
 				</div>
 			</section>
-			<section class="about">
+			<section id="about" class="about">
 				<div class="about__image"><img src="images/about.png" alt="about our company"></div>
 				<div class="about__info">
 					<div class="about__info--description">
@@ -105,7 +110,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="articles">
+			<section id="articles" class="articles">
 				<div class="wrapper">
 					<div class="articles__item">
 						<h3>"Excepteur sint occaecat cupidatat non proident"</h3>
@@ -124,7 +129,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="contact">
+			<section id="contact" class="contact">
 				<div class="wrapper">
 					<div class="contact__info">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis modi beatae non eum sed repellendus sapiente laudantium labore asperiores, magni minima nihil, commodi rem quibusdam iste placeat consequatur eligendi incidunt.</p>
