@@ -19,11 +19,11 @@ $(document).ready(function(){
 		}
 	});
 
-	$('#mobile-toggle').on('click', function(){
-		$(this).toggleClass('mobile-toggle--open');
+	$('#mobile-nav-toggle').on('click', function(){
+		$(this).toggleClass('mobile-nav-toggle--open');
 	});
 
-	$('.mobile-toggle').click(function(){
+	$('.mobile-nav-toggle').click(function(){
 		if ($('#nav').hasClass('nav--open')) {
 			$('#nav').removeClass('nav--open');
 		} else {
@@ -34,7 +34,7 @@ $(document).ready(function(){
 	$('.nav li a').click(function(){
 		if ($('#nav').hasClass('nav--open')) {
 			$('#nav').removeClass('nav--open')
-			$('#mobile-toggle').removeClass('mobile-toggle--open');
+			$('#mobile-nav-toggle').removeClass('mobile-nav-toggle--open');
 		} 
 	});
 

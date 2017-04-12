@@ -1,7 +1,6 @@
 /* ========== MEDIA QUERIES ========== */
 
 @media screen  and (max-width:960px){
-/* ========== HEADER ========== */
 
 /* ========== MAIN ========== */
 	.wrapper{
@@ -57,10 +56,10 @@
 @media screen and (max-width:800px){
 /* ========== HEADER ========== */
 	.navScroll{
-			padding: 0px 0 00px 0 !important;
+			padding: 0 !important;
 	}
-	header{
-		.mobile-toggle{
+	.page-header{
+		.mobile-nav-toggle{
 			display: block;
 		}
 		.nav{

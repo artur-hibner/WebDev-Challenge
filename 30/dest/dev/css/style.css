@@ -56,18 +56,19 @@ table {
 
 /* CSS RESET END */
 /* ========== HEADER SECTION ========== */
-* {
-  box-sizing: border-box;
-}
-
 html {
   font-size: 62.5%;
   color: #000;
   height: 100%;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #efeee9;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .wrapper {
@@ -75,7 +76,7 @@ body {
   margin: 0 auto;
 }
 
-header {
+.page-header {
   height: 100vh;
   position: relative;
   background-image: url("../images/header.png");
@@ -84,7 +85,62 @@ header {
   background-position: center center;
 }
 
-header .mobile-toggle {
+.page-header nav {
+  padding: 70px 0 80px 0;
+  background-color: #f9fbf9;
+  opacity: 0.6;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.page-header ul {
+  list-style: none;
+  text-align: center;
+}
+
+.page-header li {
+  display: inline-block;
+}
+
+.page-header li:nth-child(3) a {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
+.page-header a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #222;
+  line-height: 2.3rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 25px;
+}
+
+.page-header .wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.page-header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4em;
+  color: #333333;
+  line-height: 2.4rem;
+  font-weight: 300;
+  display: block;
+  white-space: pre-line;
+  text-align: right;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+}
+
+.mobile-nav-toggle {
   display: none;
   cursor: pointer;
   position: fixed;
@@ -93,7 +149,7 @@ header .mobile-toggle {
   z-index: 999;
 }
 
-header .mobile-toggle span {
+.mobile-nav-toggle span {
   display: block;
   width: 30px;
   height: 4px;
@@ -107,76 +163,21 @@ header .mobile-toggle span {
   transition: all ease-in-out 0.5s;
 }
 
-header .mobile-toggle--open span:nth-child(1) {
+.mobile-nav-toggle--open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 10px;
 }
 
-header .mobile-toggle--open span:nth-child(2) {
+.mobile-nav-toggle--open span:nth-child(2) {
   width: 0;
   opacity: 0;
 }
 
-header .mobile-toggle--open span:nth-child(3) {
+.mobile-nav-toggle--open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: -10px;
-}
-
-header nav {
-  padding: 70px 0 80px 0;
-  background-color: #f9fbf9;
-  opacity: 0.6;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-}
-
-header nav ul {
-  list-style: none;
-  text-align: center;
-}
-
-header nav ul li {
-  display: inline-block;
-}
-
-header nav ul li:nth-child(3) a {
-  font-size: 2.4rem;
-  line-height: 2.4rem;
-}
-
-header nav ul li a {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  color: #222;
-  line-height: 2.3rem;
-  font-weight: 400;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 0 25px;
-}
-
-header .wrapper {
-  height: 100%;
-  position: relative;
-}
-
-header p {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.4em;
-  color: #333333;
-  line-height: 2.4rem;
-  font-weight: 300;
-  display: block;
-  white-space: pre-line;
-  text-align: right;
-  position: absolute;
-  bottom: 50px;
-  right: 0;
 }
 
 .navScroll {
@@ -607,7 +608,6 @@ header p {
 
 /* ========== MEDIA QUERIES ========== */
 @media screen and (max-width: 960px) {
-  /* ========== HEADER ========== */
   /* ========== MAIN ========== */
   .wrapper {
     width: 95%;
@@ -652,44 +652,44 @@ header p {
 @media screen and (max-width: 800px) {
   /* ========== HEADER ========== */
   .navScroll {
-    padding: 0px 0 00px 0 !important;
+    padding: 0 !important;
   }
-  header .mobile-toggle {
+  .page-header .mobile-nav-toggle {
     display: block;
   }
-  header .nav {
+  .page-header .nav {
     padding: 0;
     height: 66px;
     overflow: hidden;
     z-index: 100;
     opacity: 0.8;
   }
-  header .nav--open {
+  .page-header .nav--open {
     display: block;
     padding: 0px 0 80px 0;
     height: 300px;
     opacity: 1;
   }
-  header .nav ul {
+  .page-header .nav ul {
     padding-top: 60px;
     padding-bottom: 20px;
     list-style: none;
     text-align: center;
     width: 100%;
   }
-  header .nav li {
+  .page-header .nav li {
     width: 100%;
     display: block;
     padding: 10px 0;
   }
-  header .nav li:nth-child(2), header .nav li:nth-child(3), header .nav li:last-child {
+  .page-header .nav li:nth-child(2), .page-header .nav li:nth-child(3), .page-header .nav li:last-child {
     margin: 0;
   }
-  header .nav a {
+  .page-header .nav a {
     color: #000;
     height: 100%;
   }
-  header .nav a:after {
+  .page-header .nav a:after {
     display: none;
   }
 }
