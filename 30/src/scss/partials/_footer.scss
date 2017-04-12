@@ -7,7 +7,6 @@
 	}
 	&__icons{
 		font-size: 24px;
-		ul{
 			li{
 				display: inline-block;
 				margin-right: 20px;
@@ -20,13 +19,13 @@
 
 				}
 			}
-		}
 	}
 	&__copy{
 		float: right;
 		@include font-family($roboto, 2rem, #353535, 2.8rem, 300);
 	}
-	.returnToTop{
+}
+.return-to-top{
 		position: relative;
 		a{
 		width: 60px;
@@ -59,4 +58,3 @@
   			opacity: 1;
   		}
 	} 
-}

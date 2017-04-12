@@ -541,19 +541,19 @@ body {
   font-size: 24px;
 }
 
-.footer__icons ul li {
+.footer__icons li {
   display: inline-block;
   margin-right: 20px;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
-.footer__icons ul li:hover {
+.footer__icons li:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
 
-.footer__icons ul li a {
+.footer__icons li a {
   color: #353535;
 }
 
@@ -566,11 +566,11 @@ body {
   font-weight: 300;
 }
 
-.footer .returnToTop {
+.return-to-top {
   position: relative;
 }
 
-.footer .returnToTop a {
+.return-to-top a {
   width: 60px;
   height: 60px;
   background-color: #4eaeff;
@@ -584,7 +584,7 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-.footer .returnToTop span {
+.return-to-top span {
   margin-top: 10px;
   width: 0;
   height: 0;
@@ -598,11 +598,11 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.footer .returnToTop:hover span {
+.return-to-top:hover span {
   top: 5%;
 }
 
-.footer .returnToTop:hover a {
+.return-to-top:hover a {
   opacity: 1;
 }
 

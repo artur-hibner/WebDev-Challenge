@@ -11,10 +11,10 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 200) {
-			$('#returnToTop').fadeIn(200);
+			$('#return-to-top').fadeIn(200);
 			$('#nav').addClass('navScroll');
 		} else {
-			$('#returnToTop').fadeOut(200);
+			$('#return-to-top').fadeOut(200);
 			$('#nav').removeClass('navScroll');
 		}
 	});
@@ -38,7 +38,7 @@ $(document).ready(function(){
 		} 
 	});
 
-	$('#returnToTop').click(function(){
+	$('#return-to-top').click(function(){
 		$('body,html').animate({
 			scrollTop: 0
 		}, 1000);
