@@ -84,7 +84,7 @@ body {
   background-position: center center;
 }
 
-.page-header nav {
+.page-header .nav {
   padding: 70px 0 80px 0;
   background-color: #f9fbf9;
   opacity: 0.6;
@@ -95,6 +95,11 @@ body {
   transition: all 0.8s ease;
 }
 
+.page-header .nav__link-logo a {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
 .page-header ul {
   list-style: none;
   text-align: center;
@@ -102,11 +107,6 @@ body {
 
 .page-header li {
   display: inline-block;
-}
-
-.page-header li:nth-child(3) a {
-  font-size: 2.4rem;
-  line-height: 2.4rem;
 }
 
 .page-header a {
