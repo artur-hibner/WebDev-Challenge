@@ -57,7 +57,7 @@ table {
 /* ========== HEADER SECTION ========== */
 html {
   font-size: 62.5%;
-  color: #000;
+  color: #000000;
   height: 100%;
   box-sizing: border-box;
 }
@@ -126,7 +126,7 @@ body {
 .page-header a {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-  color: #222;
+  color: #222222;
   line-height: 2.3rem;
   font-weight: 400;
   text-decoration: none;
@@ -167,7 +167,7 @@ body {
   width: 30px;
   height: 4px;
   margin: 6px 0;
-  background-color: #000;
+  background-color: #000000;
   cursor: pointer;
   border-radius: 50px;
   position: relative;
@@ -204,7 +204,7 @@ body {
 }
 
 .project__description {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 100px 190px;
   font-family: "Roboto Slab", serif;
   font-size: 4rem;
@@ -266,7 +266,7 @@ body {
 }
 
 .project__description button:hover, .project__description button:active {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .project__description button:hover:after {
@@ -305,7 +305,7 @@ body {
 }
 
 .portfolio__item--description {
-  color: #FFF;
+  color: #ffffff;
   position: absolute;
   height: 100%;
   top: 0;
@@ -330,7 +330,7 @@ body {
   text-align: center;
   padding: 20px;
   margin: 20px 60px 0 60px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ffffff;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.5s linear;
@@ -353,11 +353,11 @@ body {
 .portfolio__item a {
   display: inline-block;
   text-decoration: none;
-  color: #FFF;
+  color: #ffffff;
   font-size: 1.8rem;
   padding: 10px 20px;
-  background-color: #000;
-  box-shadow: 0 0 1px #fff;
+  background-color: #000000;
+  box-shadow: 0 0 1px #ffffff;
   -webkit-transform: scale(0);
           transform: scale(0);
   opacity: 0;
@@ -392,7 +392,7 @@ body {
 }
 
 .about {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .about:after {
@@ -443,7 +443,7 @@ body {
   display: inline-block;
   margin-right: 2.7%;
   padding: 40px 50px;
-  background-color: #FFF;
+  background-color: #ffffff;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
@@ -523,7 +523,7 @@ body {
   padding: 90px 210px 90px 0;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-  color: #FFF;
+  color: #ffffff;
   line-height: 2.4rem;
   font-weight: 400;
 }
@@ -607,7 +607,7 @@ body {
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 15px solid #fff;
+  border-bottom: 15px solid #ffffff;
   position: absolute;
   top: 15%;
   left: 25%;
@@ -703,7 +703,7 @@ body {
     margin: 0;
   }
   .page-header .nav a {
-    color: #000;
+    color: #000000;
     height: 100%;
   }
   .page-header .nav a:after {

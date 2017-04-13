@@ -2,7 +2,7 @@
 
 html{
 	font-size: 62.5%;
-	color: #000;
+	color: #000000;
 	height:100%;
 	box-sizing: border-box;
 }
@@ -62,7 +62,7 @@ body{
 		display: inline-block;
 	}
 	a{
-		@include font-family($roboto, 1.6rem, #222, 2.3rem, 400);
+		@include font-family($roboto, 1.6rem, #222222, 2.3rem, 400);
 		text-decoration: none;
 		text-transform: uppercase;
 		margin: 0 25px;
@@ -94,7 +94,7 @@ body{
 			width: 30px;
 			height: 4px;
 			margin: 6px 0;
-			background-color: #000;
+			background-color: #000000;
 			cursor: pointer;
   			border-radius: 50px;
 			position: relative;

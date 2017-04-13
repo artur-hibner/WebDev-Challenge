@@ -3,7 +3,7 @@
 .project{
 	margin-top: 190px;
 	&__description{
-		background-color: #FFFFFF;
+		background-color: #ffffff;
 		padding: 100px 190px;
 		@include font-family($robotoSlab, 4rem, #444444, auto, 100);
 		h2{
@@ -43,7 +43,7 @@
 				transition: all 0.3s;
 			}
 			&:hover, &:active{
-				color: #FFF;
+				color: #ffffff;
 			}
 			&:hover:after{
 				width: 90%;
@@ -71,7 +71,7 @@
 		text-align: center;
 		cursor: default;
 		&--description{
-			color: #FFF;
+			color: #ffffff;
 			position: absolute;
 			height: 100%;
 			top: 0;
@@ -91,7 +91,7 @@
 			text-align: center;
 			padding: 20px;
 			margin: 20px 60px 0 60px;
-			border-bottom: 1px solid #fff;
+			border-bottom: 1px solid #ffffff;
 			transform: scale(0);
 			transition: all 0.5s linear;
 			opacity: 0;
@@ -109,11 +109,11 @@
 		a{
 			display: inline-block;
 			text-decoration: none;
-			color: #FFF;
+			color: #ffffff;
 			font-size: 1.8rem;
 			padding: 10px 20px;
-			background-color: #000;
-			box-shadow: 0 0 1px #fff;
+			background-color: #000000;
+			box-shadow: 0 0 1px #ffffff;
 			transform: scale(0);
 			opacity: 0;
 			transition: all 0.5s linear; 
@@ -143,7 +143,7 @@
 
 .about{
 	@include clearfix;
-	background-color: #fff;
+	background-color: #ffffff;
 	&__image, &__info{
 		width: 50%;
 		float: left;
@@ -178,7 +178,7 @@
 		display: inline-block;
 		margin-right: 2.7%;
 		padding: 40px 50px;
-		background-color: #FFF;
+		background-color: #ffffff;
 		text-align: center;
 		@include font-family($roboto, 1.6rem, #222222, 2.4rem, 300);
 		
@@ -234,7 +234,7 @@
 	}
 	&__info{
 		padding: 90px 210px 90px 0;
-		@include font-family($roboto, 1.6rem, #FFF, 2.4rem, 400);
+		@include font-family($roboto, 1.6rem, #ffffff, 2.4rem, 400);
 		dt{
 			font-weight: 700;
 			margin-top: 20px;
