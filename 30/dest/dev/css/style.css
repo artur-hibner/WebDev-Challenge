@@ -528,17 +528,21 @@ body {
   font-weight: 400;
 }
 
-.contact__info h3 {
+.contact__info dt {
   font-weight: 700;
   margin-top: 20px;
 }
 
-.contact__info p:first-child {
+.contact__info dd:first-child {
   font-weight: 300;
 }
 
 .contact__map {
   min-height: 464px;
+}
+
+.contact a {
+  color: #ffffff;
 }
 
 /* ========== FOOTER SECTION ========== */
