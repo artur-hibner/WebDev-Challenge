@@ -5,7 +5,7 @@
 	&__description{
 		background-color: #ffffff;
 		padding: 100px 190px;
-		@include font-family($robotoSlab, 4rem, #444444, auto, 100);
+		@include font-family($robotoSlab, 4rem, #444444, 4rem, 100);
 		h2{
 			text-align: center;
 			padding-bottom: 80px;
@@ -25,7 +25,6 @@
 			text-align: center;
 			text-transform: uppercase;
 			overflow: hidden;
-			z-index: 1;
 			outline: none;
 			position: relative;
 			transition: all 0.3s;
@@ -121,7 +120,7 @@
 		}
 		&:hover{
 			img{
-				transform: scale(10);
+				transform: scale(2);
 				opacity: 0;
 			}
 			.portfolio__item--description{
@@ -154,8 +153,7 @@
 		}
 	}
 	&__info{
-		padding-left: 120px;
-		padding-top: 110px;
+		padding: 60px 0 60px 120px;
 		@include font-family($roboto, 1.4rem, #290a59, 2.2rem, 300);
 		&--description{
 			margin-top: 50px;

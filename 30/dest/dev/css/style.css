@@ -209,7 +209,7 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 4rem;
   color: #444444;
-  line-height: auto;
+  line-height: 4rem;
   font-weight: 100;
 }
 
@@ -242,7 +242,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   overflow: hidden;
-  z-index: 1;
   outline: none;
   position: relative;
   -webkit-transition: all 0.3s;
@@ -366,8 +365,8 @@ body {
 }
 
 .portfolio__item:hover img {
-  -webkit-transform: scale(10);
-          transform: scale(10);
+  -webkit-transform: scale(2);
+          transform: scale(2);
   opacity: 0;
 }
 
@@ -411,8 +410,7 @@ body {
 }
 
 .about__info {
-  padding-left: 120px;
-  padding-top: 110px;
+  padding: 60px 0 60px 120px;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   color: #290a59;
