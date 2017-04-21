@@ -1,0 +1,77 @@
+
+@font-face {
+	font-family: 'Master Of Break';
+	src: url('../fonts/MasterOfBreak.eot');
+	src: local('☺'),
+		url('../fonts/MasterOfBreak.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MasterOfBreak.woff') format('woff'),
+		url('../fonts/MasterOfBreak.ttf') format('truetype'),
+		url('../fonts/MasterOfBreak.svg#MasterOfBreak') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nanami Book';
+	src: url('../fonts/Nanami-Book.eot');
+	src: local('☺'),
+		url('../fonts/Nanami-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Nanami-Book.woff') format('woff'),
+		url('../fonts/Nanami-Book.ttf') format('truetype'),
+		url('../fonts/Nanami-Book.svg#Nanami-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nanami';
+	src: url('../fonts/Nanami-Light.eot');
+	src: local('☺'),
+		url('../fonts/Nanami-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Nanami-Light.woff') format('woff'),
+		url('../fonts/Nanami-Light.ttf') format('truetype'),
+		url('../fonts/Nanami-Light.svg#Nanami-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nanami';
+	src: url('../fonts/Nanami-Bold.eot');
+	src: local('☺'),
+		url('../fonts/Nanami-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Nanami-Bold.woff') format('woff'),
+		url('../fonts/Nanami-Bold.ttf') format('truetype'),
+		url('../fonts/Nanami-Bold.svg#Nanami-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nanami';
+	src: url('../fonts/Nanami.eot');
+	src: local('☺'),
+		url('../fonts/Nanami.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Nanami.woff') format('woff'),
+		url('../fonts/Nanami.ttf') format('truetype'),
+		url('../fonts/Nanami.svg#Nanami') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nanami Med';
+	src: url('../fonts/Nanami-Med.eot');
+	src: local('☺'),
+		url('../fonts/Nanami-Med.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Nanami-Med.woff') format('woff'),
+		url('../fonts/Nanami-Med.ttf') format('truetype'),
+		url('../fonts/Nanami-Med.svg#Nanami-Med') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+$masterOfBreak: 'Master Of Break', serif;
+$nanami: 'Nanami', serif;
+$nanamiMed: 'Nanami Med', serif;
+$nanamiBook: 'Nanami Book', serif;
