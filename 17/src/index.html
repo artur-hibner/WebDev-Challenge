@@ -10,9 +10,11 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<!--  ========== Section HEADER ========== -->
 		<header class="page-header">
+			<h1 class="visuallyhidden">Top food & drink restaurant</h1>
 			<div class="page-header__logo">
-				<!-- logo here -->
+				<img src="images/logo.png" alt="">
 			</div>
 			<nav class="page-header__nav">
 				<ul>
@@ -26,12 +28,14 @@
 				</ul>
 			</nav>
 			<div class="page-header__banner">
-				<!-- banner here -->
+				<img src="images/header-banner.png" alt="">
+				<h2>Taste on Our hands!</h2>
+				<span>- welcome -</span>
 			</div>
 		</header>
 		<main>
+			<!--  ========== Section RESERVATION ========== -->
 			<section class="reservation">
-				<h1 class="visuallyhidden">Top food & drink restaurant</h1>
 				<div class="wrapper">
 					<div class="reservation__system">
 						<h2>Wellcome to our <span>top</span></h2>
@@ -40,12 +44,13 @@
 					</div>
 				</div>
 			</section>
-			<section class="menu">
-				<div class="menu-header">
-					<div class="menu-header__image">
-						<!-- image here -->
+			<!--  ========== Section MENU ========== -->
+			<section class="restaurant-menu">
+				<div class="restaurant-menu-header">
+					<div class="restaurant-menu-header__image">
+						<img src="images/recipe.png" alt="">
 					</div>
-					<div class="menu-header__description">
+					<div class="restaurant-menu-header__description">
 						<h3>make every
 						cooking time
 						a special
@@ -58,9 +63,16 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ut dicta officiis. Quis deserunt repudiandae, deleniti. Ipsum, suscipit soluta similique, delectus eaque blanditiis! Illo soluta tempore, aliquam suscipit earum debitis.</p>
 				<button>view full menu</button>
 			</section>
+			<!--  ========== Section FEARURES ========== -->
 			<section class="fearures">
 				<!-- img with description here -->
+				<h2>The Lemon
+				Cake</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi porro reiciendis placeat corporis quas, mollitia voluptate aliquam quidem accusamus, distinctio? Dignissimos eveniet voluptates nam iste voluptatem nisi quisquam expedita alias.</p>
+				<span class="price">$15.00</span>
+				<button>view all</button>
 			</section>
+			<!--  ========== Section SHOP ========== -->
 			<section class="shop">
 				<div class="wrapper">
 					<figure class="shop__icon">
@@ -87,6 +99,7 @@
 					<figure class="shop__gallery__item"><img src="images/gallery-05.png" alt=""></figure>
 				</div>
 			</section>
+			<!--  ========== Section BLOG ========== -->
 			<section class="blog">
 				<div class="wrapper">
 					<h2>our <span>blog</span></h2>
@@ -123,16 +136,44 @@
 					</div>
 				</div>
 			</section>
+			<!--  ========== Section CONTACT ========== -->
 			<section class="contact">
 				<div class="contact__form">
 					<div class="wrapper">
 						<h2>Contact <span>Us</span></h2>
-						<!-- form here -->
+						<form action="">
+							<input type="text" placeholder="Your name">
+							<input type="email" placeholder="Email address">
+							<input type="text" placeholder="Subject">
+							<textarea name="message" id="" cols="30" rows="10"></textarea>
+						</form>
 					</div>
 				</div>
 				<div class="contact__icons">
 					<div class="wrapper">
-						<!-- address here -->
+						<address class="contact__address">
+							<img src="images/email.png" alt="">
+							<dl>
+								<dt>Email</dt>
+								<dd>
+									<a href="mailto:top@blah.com">top@blah.com</a>
+								</dd>
+							</dl>
+							<dl>
+								<img src="images/address.png" alt="">
+								<dt>our restaurant</dt>
+								<dd>431-nguyen khang
+								ha noi-viet nam</dd>
+							</dl>
+							<dl>
+								<img src="images/phone.png" alt="">
+								<dt>phone</dt>
+								<dd>
+									<a href="tel:(+84)-797-6809">(+84)-797-6809</a>
+								</dd>
+							</dl>
+						</address>
+
 					</div>
 				</div>
 				<div class="contact__map">
@@ -140,15 +181,33 @@
 				</div>
 			</section>
 		</main>
+		<!--  ========== Section FOOTER ========== -->
 		<footer class="footer">
 			<img src="" alt="">
 			<p>Copyright 2016. All rights Reserved</p>
 			<div class="footer__icons">
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
+				<ul>
+					<li>
+						<a href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+						<span class="visuallyhidden">facebook</span>
+					</li>
+					<li>
+						<a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+						<span class="visuallyhidden">twitter</span>
+					</li>
+					<li>
+						<a href="#"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+						<span class="visuallyhidden">linkedin</span>
+					</li>
+					<li>
+						<a href="#"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+						<span class="visuallyhidden">instagram</span>
+					</li>
+					<li>
+						<a href="#"><span class="fa fa-vimeo" aria-hidden="true"></span></a>
+						<span class="visuallyhidden">vimeo</span>
+					</li>
+				</ul>
 			</div>
 		</footer>
 
