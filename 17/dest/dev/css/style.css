@@ -122,7 +122,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1100px;
+  max-width: 1286px;
   margin: 0 auto;
 }
 
@@ -180,12 +180,70 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 1px;
-  white-space: pre-wrap;
+  white-space: pre-line;
   padding: 25px 30px;
   background-color: #ff7e66;
   border: 0;
   margin-top: 50px;
   margin-bottom: 155px;
+}
+
+.restaurant-menu-header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.restaurant-menu-header__image, .restaurant-menu-header__description {
+  flex-basis: 50%;
+  height: 750px;
+}
+
+.restaurant-menu-header__image {
+  background-image: url("../images/recipe.png");
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.restaurant-menu-header__description {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  background-color: #fff2ed;
+  align-self: stretch;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding-left: 100px;
+}
+
+.restaurant-menu-header__description h3 {
+  font-family: "Nanami", serif;
+  font-size: 4.5rem;
+  color: #ff7e66;
+  line-height: 5.5rem;
+  font-weight: bold;
+  white-space: pre-line;
+  text-transform: uppercase;
+}
+
+.restaurant-menu-header__description img {
+  margin: 30px 0;
+}
+
+.restaurant-menu-header__description p {
+  font-family: "Nanami", serif;
+  font-size: 1.8rem;
+  color: #9f9a97;
+  line-height: 2.5rem;
+  font-weight: 300;
+  max-width: 550px;
+  letter-spacing: 1px;
 }
 
 /* ========== FOOTER SECTION ========== */

@@ -23,7 +23,7 @@
         @include font-family($nanamiBook, 1.6rem, #fff2ee, 1rem, normal);
         text-transform: uppercase;
         letter-spacing: 1px;
-        white-space: pre-wrap;
+        white-space: pre-line;
         padding: 25px 30px;
         background-color: #ff7e66;
         border: 0;
@@ -31,3 +31,44 @@
         margin-bottom: 155px;
     }
 }
+
+.restaurant-menu-header{
+	display: flex;
+	flex-direction: row;
+	
+	&__image, &__description{
+		flex-basis: 50%;
+		height: 750px;
+	}
+	&__image{
+			background-image: url('../images/recipe.png');
+			background-size: cover;
+			background-position: bottom center;
+		
+	}
+	&__description{
+		display: flex;
+		flex-direction: column;
+		background-color: #fff2ed;
+		align-self: stretch;
+		justify-content: center;
+		align-items: center;
+		padding-left: 100px;
+		h3{
+        	@include font-family($nanami, 4.5rem, #ff7e66, 5.5rem, bold);
+        	white-space: pre-line;
+        	text-transform: uppercase;
+        	// text-align: center;
+		}
+		img{
+			margin: 30px 0;
+		}
+		p{
+			@include font-family($nanami, 1.8rem, #9f9a97, 2.5rem, 300);
+			max-width: 550px;
+			letter-spacing: 1px;
+		}
+	}
+
+}
+
