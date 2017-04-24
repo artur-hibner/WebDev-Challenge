@@ -1,1 +1,33 @@
 /* ========== MAIN SECTION ========== */
+
+.section{
+    text-align: center;
+    &__heading{
+        @include font-family($nanamiBook, 4rem, #f01b16, 4rem, normal);
+        text-transform: uppercase;
+        margin-top: 160px;
+        span{
+            font-family: $masterOfBreak;
+            position: relative;
+            top: 2px;
+            text-transform: none;
+            margin-left: 10px;
+        }
+        +p{
+            margin-top: 70px;
+            @include font-family($nanami, 2.2rem, #9f9a97, 2.2rem, 300);
+            
+        }
+    }
+    &__button{
+        @include font-family($nanamiBook, 1.6rem, #fff2ee, 1rem, normal);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        white-space: pre-wrap;
+        padding: 25px 30px;
+        background-color: #ff7e66;
+        border: 0;
+        margin-top: 50px;
+        margin-bottom: 155px;
+    }
+}

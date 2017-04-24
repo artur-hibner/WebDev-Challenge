@@ -141,6 +141,53 @@ body {
 }
 
 /* ========== MAIN SECTION ========== */
+.section {
+  text-align: center;
+}
+
+.section__heading {
+  font-family: "Nanami Book", serif;
+  font-size: 4rem;
+  color: #f01b16;
+  line-height: 4rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 160px;
+}
+
+.section__heading span {
+  font-family: "Master Of Break", serif;
+  position: relative;
+  top: 2px;
+  text-transform: none;
+  margin-left: 10px;
+}
+
+.section__heading + p {
+  margin-top: 70px;
+  font-family: "Nanami", serif;
+  font-size: 2.2rem;
+  color: #9f9a97;
+  line-height: 2.2rem;
+  font-weight: 300;
+}
+
+.section__button {
+  font-family: "Nanami Book", serif;
+  font-size: 1.6rem;
+  color: #fff2ee;
+  line-height: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: pre-wrap;
+  padding: 25px 30px;
+  background-color: #ff7e66;
+  border: 0;
+  margin-top: 50px;
+  margin-bottom: 155px;
+}
+
 /* ========== FOOTER SECTION ========== */
 /* ========== MEDIA QUERIES ========== */
 @media screen and (max-width: 960px) {
