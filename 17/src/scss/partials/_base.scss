@@ -18,9 +18,10 @@
             @include font-family($nanami, 2.2rem, #9f9a97, 2.2rem, 300);
         }
         &-shadow{
-        	@include font-family($masterOfBreak, 8rem, #f01b16, 8rem, normal);
+        	@include font-family($masterOfBreak, 8rem, #f01b16, 12rem, normal);
 			-webkit-text-stroke: 3px #FFFFFF;
 			-webkit-text-fill-color: #f01b16;
+			white-space: pre-line;
 
         }
     }
@@ -82,15 +83,18 @@
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
+	flex-wrap: wrap;
 	&__description{
 		flex-basis: 50%;
 		padding-right: 16.66%;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
 		p, button, span{
         	@include font-family($nanamiBook, 1.8rem, #FFFFFF, 2.8rem, normal);
         	display: block;
         	margin-left: 50px;
+        	flex-basis: 100%;
 		}
 		p{
         	margin-top: 60px;
@@ -110,3 +114,93 @@
 	}
 }
 
+.shop{
+	& .wrapper{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	&__icon{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 60px 0;
+		&__caption{
+			align-self: center;
+			margin-top: 28px;
+        	@include font-family($nanamiBook, 3rem, #000000, 3rem, normal);
+		}
+	}
+	&__gallery{
+		display: flex;
+		flex-flow: row wrap;
+		&__item{
+				display: flex;
+				flex-flow: row wrap;
+				flex: auto;
+				justify-content: center;
+				align-items: center;
+				width: 445px;
+				height: 445px;
+				h2, h3{
+					margin: 0;
+        			@include font-family($nanami, 5rem, #ff7e66, 7rem, bold);
+        			letter-spacing: 10px;
+				}
+				&__caption{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 80%;
+					height: 80%;
+					background-color: #f01b16;
+					background-color: rgba(240, 27, 22, 0);
+					opacity: 0;
+					transition: all 0.2s linear;
+				}
+				&:hover &__caption{
+					background-color: rgba(240, 27, 22, 0.5);
+					opacity: 1;
+				}
+				h3{
+					color: #FFFFFF;
+					text-transform: uppercase;
+					text-align: center;
+				}
+				span{
+					color: #fff481;
+				}
+			&:nth-child(1){
+				flex-basis: 25%;
+				background-image: url('../images/gallery-01.png');
+				background-size: cover;
+			}
+			&:nth-child(2){
+				flex-basis: 25%;
+				text-align: center;
+				background-color: #fff2ed;
+			}
+			&:nth-child(3){
+				flex-basis: 50%;
+				background-image: url('../images/gallery-02.png');
+				background-size: cover;
+			}
+			&:nth-child(4){
+				flex-basis: 50%;
+				background-image: url('../images/gallery-03.png');
+				background-size: cover;
+			}
+			&:nth-child(5){
+				flex-basis: 25%;
+				background-image: url('../images/gallery-04.png');
+				background-size: cover;
+			}
+			&:nth-child(6){
+				flex-basis: 25%;
+				background-image: url('../images/gallery-05.png');
+				background-size: cover;
+			}
+		}
+	}
+}
