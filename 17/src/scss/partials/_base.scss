@@ -389,7 +389,12 @@
 				flex-direction: column;
 				height: 277px;
 				background-color: #FFFFFF;
+				overflow: hidden;
 				position: relative;
+				&:hover span{
+					color: #ff7d66;
+					transform: scale(1.4);
+				}
 			}
 			dt{
 				margin: 25px 0 20px 0;
@@ -402,6 +407,7 @@
 				top: 15%;
 				color: #FFFFFF;
 				font-size: 6rem;
+				transition: all 0.2s linear;
 			}
 	}
 }

@@ -1,1 +1,59 @@
 /* ========== FOOTER SECTION ========== */
+
+.footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    @include font-family($nanami, 1.4rem, #81868e, 2.5rem, 500);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    &__icons{
+		margin-top: 30px;
+    	display: flex;
+		flex-direction: row;
+    }
+    &__heading{
+        @include font-family($masterOfBreak, 3.5rem, #f01b16, 1.2rem, normal);
+        margin-bottom: 23px;
+    }
+    li{
+    	display: inline-block;
+    	margin-left: 5px;
+    	margin-right: 5px;
+
+    }
+	.fa{
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: center;
+		width: 26px;
+		height: 26px;
+		border-radius: 26px;
+		transition: transform 0.2s linear;
+		&-facebook{
+			background-color: #3b5998;
+		}
+		&-twitter{
+			background-color: #26a6d1;
+		}
+		&-linkedin{
+			background-color: #0e76a8;
+		}
+		&-instagram{
+			background-color: #3f729b;
+		}
+		&-vimeo{
+			background-color: #86c9ef;
+		}
+		&:hover{
+			transform: scale(1.5);
+		}
+	}
+	a{
+		font-size: 1.6rem;
+		color: white;
+		text-decoration: none;
+	}
+}

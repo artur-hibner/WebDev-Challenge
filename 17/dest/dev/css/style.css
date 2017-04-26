@@ -723,7 +723,14 @@ body {
           flex-direction: column;
   height: 277px;
   background-color: #FFFFFF;
+  overflow: hidden;
   position: relative;
+}
+
+.contact__address dl:hover span {
+  color: #ff7d66;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .contact__address dt {
@@ -739,9 +746,102 @@ body {
   top: 15%;
   color: #FFFFFF;
   font-size: 6rem;
+  transition: all 0.2s linear;
 }
 
 /* ========== FOOTER SECTION ========== */
+.footer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  font-family: "Nanami", serif;
+  font-size: 1.4rem;
+  color: #81868e;
+  line-height: 2.5rem;
+  font-weight: 500;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.footer__icons {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.footer__heading {
+  font-family: "Master Of Break", serif;
+  font-size: 3.5rem;
+  color: #f01b16;
+  line-height: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 23px;
+}
+
+.footer li {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.footer .fa {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 26px;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.footer .fa-facebook {
+  background-color: #3b5998;
+}
+
+.footer .fa-twitter {
+  background-color: #26a6d1;
+}
+
+.footer .fa-linkedin {
+  background-color: #0e76a8;
+}
+
+.footer .fa-instagram {
+  background-color: #3f729b;
+}
+
+.footer .fa-vimeo {
+  background-color: #86c9ef;
+}
+
+.footer .fa:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.footer a {
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+}
+
 /* ========== MEDIA QUERIES ========== */
 @media screen and (max-width: 960px) {
   /* ========== HEADER ========== */
