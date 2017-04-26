@@ -287,6 +287,10 @@
 }
 
 .contact{
+	display: flex;
+			justify-content: space-around;
+			flex-direction: column;
+
 	margin-top: 20px;
 	&__form{
 			height: 800px;
@@ -359,6 +363,45 @@
 		&__message{
 			flex-direction: column;
 		}
-
+	}
+	&__icons{
+		background-color: #fff2ed;
+	}
+	&__address{
+			display: flex;
+			justify-content: space-around;
+			flex-direction: row;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			dl,dd, a{
+				@include font-family($nanamiBook, 1.6rem, #464646, 2rem, normal);
+        		text-align: center;
+        		text-transform: uppercase;
+			}
+			a, dd{
+				text-decoration: none;
+				color: #81868e;
+			}
+			dl{
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				flex-direction: column;
+				height: 277px;
+				background-color: #FFFFFF;
+				position: relative;
+			}
+			dt{
+				margin: 25px 0 20px 0;
+			}
+			dd{
+				white-space: pre-line;
+			}
+			span{
+				position: absolute;
+				top: 15%;
+				color: #FFFFFF;
+				font-size: 6rem;
+			}
 	}
 }
