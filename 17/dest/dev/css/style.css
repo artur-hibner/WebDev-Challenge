@@ -140,6 +140,101 @@ body {
   white-space: nowrap;
 }
 
+.page-header__nav {
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.page-header__nav .wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.page-header__nav .wrapper ul {
+  width: 75%;
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+}
+
+.page-header__nav .wrapper li {
+  margin: 0 30px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.page-header__nav .wrapper a {
+  font-family: "Nanami", serif;
+  font-size: 1.8rem;
+  color: #000000;
+  line-height: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-header__nav .wrapper a::after {
+  content: " ";
+  width: 120%;
+  height: 40px;
+  background-color: #fff581;
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  left: -10%;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+
+.page-header__nav .wrapper a:hover:after {
+  opacity: 1;
+}
+
+.page-header__banner {
+  height: 770px;
+  background-image: url("../images/header-banner.png");
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.page-header span {
+  font-family: "Nanami", serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  line-height: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
 /* ========== MAIN SECTION ========== */
 .section {
   text-align: center;
@@ -152,7 +247,7 @@ body {
   line-height: 4rem;
   font-weight: normal;
   text-transform: uppercase;
-  margin-top: 160px;
+  margin-top: 120px;
 }
 
 .section__heading span {
