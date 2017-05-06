@@ -4,6 +4,18 @@
 /* ========== HEADER ========== */
 
 /* ========== MAIN ========== */
+.restaurant-menu-header{
+	&__description{
+		padding: 30px;
+	}
+}
+
+.fearures{
+	&__description{
+		flex-basis: 70%;
+		padding-right: 6.66%;
+	}
+}
 
 /* ========== FOOTER ========== */
 
@@ -13,6 +25,37 @@
 /* ========== HEADER ========== */
 
 /* ========== MAIN ========== */
+.section{
+    &__heading{
+        &-shadow{
+        	font-size: 6.5rem;
+        }
+    }
+}
+
+.restaurant-menu-header{
+	flex-direction: column;
+}	
+
+.shop{
+	&__gallery{
+		&__item{
+				flex-flow: column wrap;
+			&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+				flex-basis: 100%;
+			}
+			&:nth-child(2){
+				order: -1;
+			}
+		}
+	}
+}
+
+.contact{
+	&__address{
+		flex-direction: column;
+	}
+}
 
 /* ========== FOOTER ========== */
 

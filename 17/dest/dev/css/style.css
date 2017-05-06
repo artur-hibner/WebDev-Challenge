@@ -172,11 +172,10 @@ body {
           justify-content: space-between;
   -webkit-box-align: end;
           align-items: flex-end;
-  overflow: hidden;
 }
 
 .page-header__nav .wrapper li {
-  margin: 0 30px;
+  margin: 0 5px;
   margin-bottom: 30px;
   position: relative;
   z-index: 1;
@@ -195,17 +194,19 @@ body {
 .page-header__nav .wrapper a::after {
   content: " ";
   width: 120%;
-  height: 40px;
+  height: 0;
   background-color: #fff581;
   opacity: 0;
   position: absolute;
-  top: 10px;
+  top: 45px;
   left: -10%;
   z-index: -1;
   transition: all 0.3s linear;
 }
 
 .page-header__nav .wrapper a:hover:after {
+  height: 38px;
+  top: 10px;
   opacity: 1;
 }
 
@@ -373,7 +374,7 @@ body {
 
 .fearures__description {
   flex-basis: 50%;
-  padding-right: 16.66%;
+  padding-right: 10%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -941,12 +942,44 @@ body {
 @media screen and (max-width: 960px) {
   /* ========== HEADER ========== */
   /* ========== MAIN ========== */
+  .restaurant-menu-header__description {
+    padding: 30px;
+  }
+  .fearures__description {
+    flex-basis: 70%;
+    padding-right: 6.66%;
+  }
   /* ========== FOOTER ========== */
 }
 
 @media screen and (max-width: 800px) {
   /* ========== HEADER ========== */
   /* ========== MAIN ========== */
+  .section__heading-shadow {
+    font-size: 6.5rem;
+  }
+  .restaurant-menu-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .shop__gallery__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column wrap;
+  }
+  .shop__gallery__item:nth-child(1), .shop__gallery__item:nth-child(2), .shop__gallery__item:nth-child(3), .shop__gallery__item:nth-child(4), .shop__gallery__item:nth-child(5), .shop__gallery__item:nth-child(6) {
+    flex-basis: 100%;
+  }
+  .shop__gallery__item:nth-child(2) {
+    -webkit-box-ordinal-group: 0;
+            order: -1;
+  }
+  .contact__address {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
   /* ========== FOOTER ========== */
 }
 
