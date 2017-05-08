@@ -941,6 +941,9 @@ body {
 /* ========== MEDIA QUERIES ========== */
 @media screen and (max-width: 960px) {
   /* ========== HEADER ========== */
+  .wrapper {
+    max-width: 95%;
+  }
   /* ========== MAIN ========== */
   .restaurant-menu-header__description {
     padding: 30px;
@@ -980,24 +983,81 @@ body {
     -webkit-box-direction: normal;
             flex-direction: column;
   }
+  .contact__address dl {
+    margin: 20px 0;
+    padding-top: 20px;
+  }
   /* ========== FOOTER ========== */
 }
 
 @media screen and (max-width: 640px) {
   /* ========== HEADER ========== */
+  .page-header__banner {
+    text-align: center;
+  }
   /* ========== MAIN ========== */
+  .contact__form input {
+    margin: 20px 0;
+  }
+  .contact__form input:nth-child(2) {
+    margin: 0;
+  }
+  .contact .form__data, .contact .form__message {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
   /* ========== FOOTER ========== */
 }
 
 @media screen and (max-width: 480px) {
   /* ========== HEADER ========== */
   /* ========== MAIN ========== */
+  .section__heading-shadow {
+    font-size: 6rem;
+    line-height: 8rem;
+    text-align: center;
+  }
+  .section__heading span {
+    display: block;
+    margin-top: 20px;
+  }
+  .fearures__description {
+    flex-basis: 90%;
+    padding: 0;
+  }
   /* ========== FOOTER ========== */
 }
 
 @media screen and (max-width: 320px) {
   /* ========== HEADER ========== */
   /* ========== MAIN ========== */
+  .section__heading {
+    margin-top: 50px;
+  }
+  .section__heading-shadow {
+    font-size: 5rem;
+  }
+  .restaurant-menu-header__description h3 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .contact__form h2 {
+    margin: 20px 0;
+  }
+  .contact__form input {
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+  }
+  .contact__form input:nth-child(2) {
+    margin: 0;
+  }
+  .contact .form__data, .contact .form__message {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
   /* ========== FOOTER ========== */
 }
 
