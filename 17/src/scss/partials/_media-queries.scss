@@ -26,6 +26,50 @@
 @media screen and (max-width:800px){
 	/* ========== HEADER ========== */
 
+	.page-header{
+		&__logo{
+			align-self: flex-start;
+			margin-left: 20px;
+		}
+	    &__nav .wrapper{
+	        max-width: 100%;
+	        flex-direction: column;
+	        height: 100%;
+	        ul{
+	        	display: none;
+	            width: 100%;
+	            flex-direction: column;
+	            margin-top: 0;
+	        }
+	        li{
+	        	width: 100%;
+	        	text-align: center;
+	            margin: 0;
+	            margin-bottom: 0px;
+	        }
+	        a{
+	        	width: 100%;
+	        	margin: 10px 0;
+	    		display: block;
+	            &::after{
+	            	width: 100%;
+	                top: 14px;
+	                left: 0;
+	            }
+	            &:hover:after{
+	                height: 38px;
+	                top: 0px;
+	            }
+	        }
+	        .nav--open{
+	    		display: flex;	
+	    	}
+	    }
+	}
+	.mobile-nav-toggle{
+		display: block;
+	}
+
 	/* ========== MAIN ========== */
 	.section{
 	    &__heading{
